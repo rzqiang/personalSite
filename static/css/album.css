@@ -1,0 +1,100 @@
+figure.album figcaption::before,
+figure.album figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+	border: 1px solid #fff;
+	-webkit-transform: scale(0, 1);
+	transform: scale(0, 1);
+}
+
+figure.album h5 {
+	padding-top: 25%;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translate3d(0, -20px, 0);
+	transform: translate3d(0, -20px, 0);
+	
+}
+
+figure.album p {
+	padding: 10px 8px 0 8px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+	transition: opacity 0.5s, transform 0.5s;
+	-webkit-transform: translate3d(0, 20px, 0);
+	transform: translate3d(0, 20px, 0);
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.album:hover figcaption::before,
+figure.album:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.album:hover h5,
+figure.album:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+
+/* Common style */
+.album_list figure {
+	overflow: hidden;
+	width: 100%;
+	margin: 0;
+	background: #00BFFF;
+	text-align: center;
+	cursor: pointer;
+
+}
+
+.album_list figure.album:hover img {
+	opacity: 0.5;
+}
+
+.album_list figure img {
+	width: 100%;
+	opacity: 0.8;
+}
+
+.album_list figure figcaption {
+	padding: 1.5em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.album_list figure figcaption::before,
+.album_list figure figcaption::after {
+	pointer-events: none;
+}
+
+.album_list figure figcaption,
+.album_list figure figcaption>a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.album_list figure figcaption>a {
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}

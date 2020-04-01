@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<title>开发演示站 &#8211; 个人网站 &#8211; 博客</title>
+		<link href="./static/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="./static/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="./static/css/web.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="./static/css/list.css" rel="stylesheet" type="text/css" media="screen" />
+		<link href="./static/css/album.css" rel="stylesheet" type="text/css" media="screen" />
+
+		<script type="text/javascript" src="./static/js/jquery.min.2.2.0.js"></script>
+		<script type="text/javascript" src="./static/bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("img.lazyload").lazyload();
+			});
+		</script>
+
+	</head>
+	<body>
+		<div class="nav fixed-top w-100 bg-white">
+			<nav class="navbar navbar-expand-lg navbar-light bg-white ">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="blog_list.html">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="album_list.html">Album</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="demo_list.html">Demo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+					</form>
+				</div>
+			</nav>
+		</div>
+		<div class="container bg-white ">
+			<main>
+				<section>
+					<h3 class="home-title">welcome</h3>
+					<div class="slide_card">
+						<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+								<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img src="./static/img/31.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="./static/img/31.jpg" class="d-block w-100" alt="...">
+								</div>
+								<div class="carousel-item">
+									<img src="./static/img/31.jpg" class="d-block w-100" alt="...">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h3 class="home-title">Latest Article</h3>
+					<ul class="news_list">
+						<li>
+							<a class="text-decoration-none" href="blog.html" title="撒哈拉的故事" target="_blank"><i><img src="./static/img/1.jpg"
+									 alt="撒哈拉的故事"></i>
+								<h2>撒哈拉的故事</h2>
+								<p class="news_list_info">&#8230&#8230我有许多好看的衣服，但是平日很少穿。我伸头去看了一下荷西，他穿了一件深蓝的衬衫，大胡子也修剪了一下。好，我也穿蓝色的。我找了一件淡蓝细麻布的长衣服。虽然不是新的，但是它自有一种朴实优雅的风味。鞋子仍是一双凉鞋，头发放下来，戴了一顶草编的阔边帽子，没有花，去厨房拿了一把香菜别在帽子上，没有用皮包，两手空空的。荷西打量了我一下：“很好，田园风味，这么简单反而好看。”于是我们锁了门，就走进沙漠里去。</p>
+								<p class="news_list_time"><span class="text-primary">ECHO</span><span>时间：2020-03-05</span><span>点击：<span class="text-danger">177</span></span></p>
+							</a>
+						</li>
+						<li>
+							<a class="text-decoration-none" href="blog.html" title="撒哈拉的故事" target="_blank"><i><img src="./static/img/1.jpg"
+									 alt="撒哈拉的故事"></i>
+								<h2>撒哈拉的故事</h2>
+								<p class="news_list_info">&#8230&#8230我有许多好看的衣服，但是平日很少穿。我伸头去看了一下荷西，他穿了一件深蓝的衬衫，大胡子也修剪了一下。好，我也穿蓝色的。我找了一件淡蓝细麻布的长衣服。虽然不是新的，但是它自有一种朴实优雅的风味。鞋子仍是一双凉鞋，头发放下来，戴了一顶草编的阔边帽子，没有花，去厨房拿了一把香菜别在帽子上，没有用皮包，两手空空的。荷西打量了我一下：“很好，田园风味，这么简单反而好看。”于是我们锁了门，就走进沙漠里去。</p>
+								<p class="news_list_time"><span class="text-primary">ECHO</span><span>时间：2020-03-05</span><span>点击：<span class="text-danger">177</span></span></p>
+							</a>
+						</li>
+						<li>
+							<a class="text-decoration-none" href="blog.html" title="撒哈拉的故事" target="_blank"><i><img src="./static/img/1.jpg"
+									 alt="撒哈拉的故事"></i>
+								<h2>撒哈拉的故事</h2>
+								<p class="news_list_info">&#8230&#8230我有许多好看的衣服，但是平日很少穿。我伸头去看了一下荷西，他穿了一件深蓝的衬衫，大胡子也修剪了一下。好，我也穿蓝色的。我找了一件淡蓝细麻布的长衣服。虽然不是新的，但是它自有一种朴实优雅的风味。鞋子仍是一双凉鞋，头发放下来，戴了一顶草编的阔边帽子，没有花，去厨房拿了一把香菜别在帽子上，没有用皮包，两手空空的。荷西打量了我一下：“很好，田园风味，这么简单反而好看。”于是我们锁了门，就走进沙漠里去。</p>
+								<p class="news_list_time"><span class="text-primary">ECHO</span><span>时间：2020-03-05</span><span>点击：<span class="text-danger">177</span></span></p>
+							</a>
+						</li>
+						<li>
+							<a class="text-decoration-none" href="blog.html" title="撒哈拉的故事" target="_blank"><i><img src="./static/img/1.jpg"
+									 alt="撒哈拉的故事"></i>
+								<h2>撒哈拉的故事</h2>
+								<p class="news_list_info">&#8230&#8230我有许多好看的衣服，但是平日很少穿。我伸头去看了一下荷西，他穿了一件深蓝的衬衫，大胡子也修剪了一下。好，我也穿蓝色的。我找了一件淡蓝细麻布的长衣服。虽然不是新的，但是它自有一种朴实优雅的风味。鞋子仍是一双凉鞋，头发放下来，戴了一顶草编的阔边帽子，没有花，去厨房拿了一把香菜别在帽子上，没有用皮包，两手空空的。荷西打量了我一下：“很好，田园风味，这么简单反而好看。”于是我们锁了门，就走进沙漠里去。</p>
+								<p class="news_list_time"><span class="text-primary">ECHO</span><span>时间：2020-03-05</span><span>点击：<span class="text-danger">177</span></span></p>
+							</a>
+						</li>
+					</ul>
+					<p class="text-center"><a class="more-link" target="_blank" href="blog_list.html">Read More &rarr;</a></p>
+				</section>
+				<section>
+					<h3 class="home-title">demo List</h3>
+					<div class="demo_list row row-cols-1 row-cols-md-2">
+						<div class="col">
+							<a href="demo.html" target="_blank">
+								<div class="img_card card">
+									<img src="./static/img/1.jpg" class="card-img" alt="...">
+									<div class="card-img-overlay">
+										<h5 class="text-truncate">Card titleCard titleCard title</h5>
+										<p class="text-truncate line-clamp-6">This is a wider card with supporting text below as a natural lead-in to
+											additional
+											content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a
+											wider card with supporting text below as a natural lead-in to additional content.This is a wider card with
+											supporting text below as a natural lead-in to additional content.This is a wider card with supporting text
+											below as a natural lead-in to additional content.This is a wider card with supporting text below as a
+											natural
+											lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to
+											additional content.This is a wider card with supporting text below as a natural lead-in to additional
+											content. This content is a little bit longer.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="col">
+							<a href="demo.html" target="_blank">
+								<div class="img_card card">
+									<img src="./static/img/1.jpg" class="card-img" alt="...">
+									<div class="card-img-overlay">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6">This is a wider card with supporting text below as a natural lead-in to
+											additional
+											content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a
+											wider card with supporting text below as a natural lead-in to additional content.This is a wider card with
+											supporting text below as a natural lead-in to additional content.This is a wider card with supporting text
+											below as a natural lead-in to additional content.This is a wider card with supporting text below as a
+											natural
+											lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to
+											additional content.This is a wider card with supporting text below as a natural lead-in to additional
+											content. This content is a little bit longer.</p>
+
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col">
+							<a href="demo.html" target="_blank">
+								<div class="img_card card">
+									<img src="./static/img/1.jpg" class="card-img" alt="...">
+									<div class="card-img-overlay">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6 ">This is a wider card with supporting text below as a natural lead-in
+											to additional
+											content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a
+											wider card with supporting text below as a natural lead-in to additional content.This is a wider card with
+											supporting text below as a natural lead-in to additional content.This is a wider card with supporting text
+											below as a natural lead-in to additional content.This is a wider card with supporting text below as a
+											natural
+											lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to
+											additional content.This is a wider card with supporting text below as a natural lead-in to additional
+											content. This content is a little bit longer.</p>
+
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col">
+							<a href="demo.html" target="_blank">
+								<div class="img_card card">
+									<img src="./static/img/1.jpg" class="card-img" alt="...">
+									<div class="card-img-overlay">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6">This is a wider card with supporting text below as a natural lead-in to
+											additional
+											content.This is a wider card with supporting text below as a natural lead-in to additional content.This is a
+											wider card with supporting text below as a natural lead-in to additional content.This is a wider card with
+											supporting text below as a natural lead-in to additional content.This is a wider card with supporting text
+											below as a natural lead-in to additional content.This is a wider card with supporting text below as a
+											natural
+											lead-in to additional content.This is a wider card with supporting text below as a natural lead-in to
+											additional content.This is a wider card with supporting text below as a natural lead-in to additional
+											content. This content is a little bit longer.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<p class="text-center"><a class="more-link" target="_blank" href="demo_list.html">Read More &rarr;</a></p>
+				</section>
+				<section>
+					<h3 class="home-title">project List</h3>
+					<div class="project_list row row-cols-1 row-cols-md-3">
+
+						<div class="project_item col mb-4">
+							<a class="text-reset text-decoration-none" target="_blank" href="demo.html">
+								<div class="card h-100">
+									<img src="./static/img/1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6">This is a longer card with supporting text below as a natural lead-in
+											to additional
+											content. This content is a little bit longer.</p>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Last updated 3 mins ago</small>
+									</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="project_item col mb-4">
+							<a class="text-reset text-decoration-none" target="_blank" href="demo.html">
+								<div class="card h-100">
+									<img src="./static/img/1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6">This is a longer card with supporting text below as a natural lead-in
+											to additional
+											content. This content is a little bit longer.</p>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Last updated 3 mins ago</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="project_item col mb-4">
+							<a class="text-reset text-decoration-none" target="_blank" href="demo.html">
+								<div class="card h-100">
+									<img src="./static/img/1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6">This is a longer card with supporting text below as a natural lead-in
+											to additional
+											content. This content is a little bit longer.</p>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Last updated 3 mins ago</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="project_item col mb-4">
+							<a class="text-reset text-decoration-none" target="_blank" href="demo.html">
+								<div class="card h-100">
+									<img src="./static/img/1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6">This is a longer card with supporting text below as a natural lead-in
+											to additional
+											content. This content is a little bit longer.</p>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Last updated 3 mins ago</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="project_item col mb-4">
+							<a class="text-reset text-decoration-none" target="_blank" href="demo.html">
+								<div class="card h-100">
+									<img src="./static/img/1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6">This is a longer card with supporting text below as a natural lead-in
+											to additional
+											content. This content is a little bit longer.</p>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Last updated 3 mins ago</small>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="project_item col mb-4">
+							<a class="text-reset text-decoration-none" target="_blank" href="demo.html">
+								<div class="card h-100">
+									<img src="./static/img/1.jpg" class="card-img-top" alt="...">
+									<div class="card-body">
+										<h5 class="text-truncate">Card title</h5>
+										<p class="text-truncate line-clamp-6">This is a longer card with supporting text below as a natural lead-in
+											to additional
+											content. This content is a little bit longer.</p>
+									</div>
+									<div class="card-footer">
+										<small class="text-muted">Last updated 3 mins ago</small>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					<p class="text-center"><a class="more-link" target="_blank" href="demo_list.html">Read More &rarr;</a></p>
+				</section>
+				<section>
+					<h3 class="home-title">Album List</h3>
+					<div class="album_list row row-cols-1 row-cols-md-4">
+						<div class="col mb-4">
+							<figure class="album">
+								<img data-original="static/img/28.jpg" alt="Image 8" class="img-fluid lazyload">
+								<figcaption>
+									<h5 class="font-weight-bold text-truncate font-16">怀念啊我们的青春啊</h5>
+									<a href="album.html" target="_blank">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col mb-4">
+							<figure class="album">
+								<img data-original="static/img/28.jpg" alt="Image 8" class="img-fluid lazyload">
+								<figcaption>
+									<h5 class="font-weight-bold text-truncate font-16">怀念啊我们的青春啊</h5>
+									<a href="album.html" target="_blank">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col mb-4">
+							<figure class="album">
+								<img data-original="static/img/28.jpg" alt="Image 8" class="img-fluid lazyload">
+								<figcaption>
+									<h5 class="font-weight-bold text-truncate font-16">怀念啊我们的青春啊</h5>
+									<a href="album.html" target="_blank">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="col mb-4">
+							<figure class="album">
+								<img data-original="static/img/28.jpg" alt="Image 8" class="img-fluid lazyload">
+								<figcaption>
+									<h5 class="font-weight-bold text-truncate font-16">怀念啊我们的青春啊</h5>
+									<a href="album.html" target="_blank">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<p class="text-center"><a class="more-link" target="_blank" href="album_list.html">Read More &rarr;</a></p>
+				</section>
+			</main><!-- #main -->
+			<aside class="sticky-top">
+				<section>
+					<h4 class="home-title">CARD</h4>
+					<div class="card">
+						<img src="./static/img/1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<p class="font-weight-normal text-secondary">如果你喜欢这个模板，你可以到<a class="text-decoration-none" href="https://github.com/rzqiang"
+								 target="_blank"> GitHub </a>上获取代码，欢迎<a class="text-decoration-none" href="https://github.com/rzqiang" target="_blank">
+									Star </a>！</p>
+
+						</div>
+					</div>
+				</section>
+				<section>
+					<h4 class="home-title">CATEGORY</h4>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+							<a href="##" class="text-truncate text-secondary text-decoration-none" title="Cras justo odio ">Cras justo odio
+							</a>
+							<span class="badge badge-primary badge-pill">14</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+							<a href="##" class="text-truncate text-secondary text-decoration-none" title="Cras justo odio ">Cras justo odio
+							</a>
+							<span class="badge badge-primary badge-pill">2</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+							<a href="##" class="text-truncate text-secondary text-decoration-none" title="Cras justo odio ">Cras justo odio
+							</a>
+							<span class="badge badge-primary badge-pill">1</span>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h4 class="home-title">HOT LIST</h4>
+					<ul class="list-group list-group-flush figure-caption">
+
+						<li class="list-group-item d-flex align-items-center list-group-item-action">
+							<span class="badge badge-danger mr-1">1</span>
+							<a href="##" class="text-truncate text-secondary text-decoration-none" title="学霸是怎么样炼成的">学霸是怎么样炼成的</a>
+						</li>
+						<li class="list-group-item d-flex align-items-center list-group-item-action">
+							<span class="badge badge-warning mr-1">2</span>
+							<a href="##" class="text-truncate text-secondary text-decoration-none" title="怎么创建个人站点">怎么创建个人站点</a>
+						</li>
+						<li class="list-group-item d-flex align-items-center list-group-item-action">
+							<span class="badge badge-primary mr-1">3</span>
+							<a href="##" class="text-truncate text-secondary text-decoration-none" title="面向JY编程——从入门到精通">面向JY编程——从入门到精通</a>
+						</li>
+						<li class="list-group-item d-flex align-items-center list-group-item-action">
+							<span class="badge badge-secondary mr-1">4</span>
+							<a href="##" class="text-truncate text-secondary text-decoration-none" title="前端开发路在何方">前端开发路在何方</a>
+						</li>
+						<li class="list-group-item d-flex align-items-center list-group-item-action ">
+							<span class="badge badge-secondary mr-1">5</span>
+							<a href="##" class="text-truncate text-secondary text-decoration-none" title="后端开发路在何方">后端开发路在何方</a>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h4 class="home-title">BANNER</h4>
+					<figure class="figure">
+						<img src="./static/img/1.jpg" class="figure-img img-fluid rounded" alt="...">
+						<figcaption class="figure-caption">A caption for the above image.</figcaption>
+					</figure>
+				</section>
+				<section class="widget_tag_cloud">
+					<h4 class="home-title">Tags</h4>
+					<div class="tagcloud">
+						<a href="##" title='14 topics' class="badge-light">beautiful</a>
+						<a href="##" title='14 topics' class="badge-light">blog</a>
+						<a href="##" title='14 topics' class="badge-light">demo</a>
+						<a href="##" title='14 topics' class="badge-light">magazine</a>
+						<a href="##" title='14 topics' class="badge-light">WEB代码</a>
+						<a href="##" title='14 topics' class="badge-light">编码小站</a>
+						<a href="##" title='14 topics' class="badge-light">园艺生活</a>
+					</div>
+				</section>
+			</aside>
+		</div>
+		<h3 class="home-title"> End Line </h3>
+		<footer class="pt-4 pb-4 text-center bg-white ">
+			<div>
+				<span class="sep">Powered by <a href="#">Rzqiang</a></span>
+				<p>备案号：<a target="_blank" href="http://www.beian.miit.gov.cn">豫ICP备 16008841号</a></p>
+			</div><!-- .site-info -->
+		</footer>
+	</body>
+
+</html>
